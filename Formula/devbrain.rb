@@ -11,7 +11,7 @@ class Devbrain < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.3/devbrain_1.5.3_darwin_amd64.tar.gz"
-      sha256 "20f5c3fbdf95440a6f9916ca1bb990cdd3d76b5fbfb7d6c13d043dd66469278d"
+      sha256 "2d65a6670069704ffa81e7e263a0198bb39ba64254e6f09166f696db698bee27"
 
       define_method(:install) do
         bin.install "devbrain"
@@ -19,7 +19,7 @@ class Devbrain < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.3/devbrain_1.5.3_darwin_arm64.tar.gz"
-      sha256 "66db96d1b9b0c6d135123e7215ca586ac8cc4d2684eb096f0f101eedb3313de4"
+      sha256 "106031e65702274d43cccc44c35463536bf558f1a82d39f978380bdc5b602611"
 
       define_method(:install) do
         bin.install "devbrain"
@@ -30,14 +30,14 @@ class Devbrain < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.3/devbrain_1.5.3_linux_amd64.tar.gz"
-      sha256 "d64660e7b7b50823160ffbf009050ff1d32739a7512aa35439934c9b65f55c48"
+      sha256 "b765908a1f2cc082f347642221254c8fb67b27e76c1d7fbfde163c866b9539fd"
       define_method(:install) do
         bin.install "devbrain"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.3/devbrain_1.5.3_linux_arm64.tar.gz"
-      sha256 "214081a9de471ebd8294207d2ad7ae4609868a19fc0679bba52825cddee80915"
+      sha256 "f6e6d42a31212fe638f528eebaeb9de0490312d7431382c8234c3a08a30ac9c6"
       define_method(:install) do
         bin.install "devbrain"
       end
