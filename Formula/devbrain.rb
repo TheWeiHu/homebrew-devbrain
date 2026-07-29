@@ -5,21 +5,21 @@
 class Devbrain < Formula
   desc "Turn your prompts into a durable, queryable brain any agent can resume from"
   homepage "https://github.com/TheWeiHu/devbrain"
-  version "1.5.15"
+  version "1.5.16"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.15/devbrain_1.5.15_darwin_amd64.tar.gz"
-      sha256 "e44a7fa209fc9829fa5faf7cdd93ebf24ba94e7b65f57ac73c52a259f26f12a9"
+      url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.16/devbrain_1.5.16_darwin_amd64.tar.gz"
+      sha256 "ba81c0c29e5d2027b3327d60bf68e9619bfa658c698b9f29b6316c39877a7368"
 
       define_method(:install) do
         bin.install "devbrain"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.15/devbrain_1.5.15_darwin_arm64.tar.gz"
-      sha256 "f6a14169edd0d47cd5a844a672531dd3257d59143557fcae99c87f902f91461a"
+      url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.16/devbrain_1.5.16_darwin_arm64.tar.gz"
+      sha256 "88aaf49b56eec6e638b065077bacdf793dc68e084ab4a016d2475f15559d9f6a"
 
       define_method(:install) do
         bin.install "devbrain"
@@ -29,15 +29,15 @@ class Devbrain < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.15/devbrain_1.5.15_linux_amd64.tar.gz"
-      sha256 "0dd53d903aa099ce9445a46dc38ce29b29067fafafe8791765abb8a61eb0315b"
+      url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.16/devbrain_1.5.16_linux_amd64.tar.gz"
+      sha256 "bb40247929094d4a2a8bb557e1fc9b7070ad6ce6fcabd417cb0a308278cd325d"
       define_method(:install) do
         bin.install "devbrain"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.15/devbrain_1.5.15_linux_arm64.tar.gz"
-      sha256 "6cbeac1faf34b12a12b5c6c1d667e21bf7c3a9e664f11a99a6066313db2502d8"
+      url "https://github.com/TheWeiHu/devbrain/releases/download/v1.5.16/devbrain_1.5.16_linux_arm64.tar.gz"
+      sha256 "e54bdd0c2e30c17f257528ddb8eaaa72e75cc993c664a9456508459d4abd9f7f"
       define_method(:install) do
         bin.install "devbrain"
       end
